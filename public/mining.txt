@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Litecoin (LTC) Scrypt | Mining Pools</title>
+<meta name="description" content="List of known Litecoin pools (LTC) Scrypt PoW algorithm. Live hashrate distribution, pool fees & minimum payment comparison. Mining Pools & Block Explorer">
+<meta name="keywords" content="Litecoin, Pools, LTC, Scrypt, Mining, Calculator, Exchanges, Pool, Coin, Block, Explorer">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2" as="font" type="font/woff2" crossorigin>
+<style type="text/css">@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="v1/style1.min2.css" rel="stylesheet">
+<script data-cfasync="false">console.time("ShowMainpage");var last_time = "1706234887";var coin_grup = "ASIC - Scrypt";var link_base = "";var page = "litecoin";var pageBlocks = "litecoin";var versiune = "v1";var script_amcharts = "v1/amcharts4_5.min.js";var page_refresh = 1;var session_count = 1;var widgetHashrate = "1";var widgetUnit = "T";</script>
+<script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+<script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+<script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script data-cfasync="false" src="/data/coin_list.21.min.js"></script>
+<script data-cfasync="false" src="v1/functions12.min.js"></script>
+<script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/dataTables.bootstrap.min.js"></script>
+<script src="dist/js/adminlte.min.js" type="08d9d459fbf225292988a77b-text/javascript"></script>
+<script type="08d9d459fbf225292988a77b-text/javascript">window.addEventListener("load", function () {setTimeout(function(){LoadBSA("1706234400000");LoadSticky();}, 100);});</script> <style type="text/css"> .amcharts-range-selector-range-wrapper { display:none; }</style>
+<script data-cfasync="false" src="v1/script80.min.js"></script>
+<link rel="preload" href="https://data.miningpoolstats.stream/data/litecoin.js?t=1706234887" as="fetch" type="”application/json”" crossorigin="anonymous">
+</head>
+<body class="hold-transition skin-blue sidebar-mini" style="background-color:#e5e5e5;">
+<div class="wrapper" style="background-color:#ecf0f5;overflow:hidden;">
+<aside class="main-sidebar" style="width:230px;padding-top:50px;background-color:#222d32;">
+<div class="visible-xs" style="height:30px;"></div>
+<section class="sidebar" style="padding-top:0px;background-color:#222d32;" id="sticky1">
+<a href="https://trustpool.cc" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; return aClick('ad-click','trustpool.cc','https://trustpool.cc');" data-cf-modified-08d9d459fbf225292988a77b-><img width="230" height="70" class="lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/trustpool230v7.webp" alt="trustpool.cc" /></a>
+<script data-cfasync="false">lozad().observe();</script>
+<div class="sidebar-form input-group">
+<input type="text" name="q" id="myInput" class="form-control" onkeyup="if (!window.__cfRLUnblockHandlers) return false; filterFunction(event)" placeholder="Search coins ..." data-cf-modified-08d9d459fbf225292988a77b->
+<span class="input-group-btn"><div class="btn btn-flat"><i class="fa fa-search"></i></div></span>
+</div>
+<div class="input-group-btn" style="padding-left:10px;" id="algoDropdown">
+<button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" style="width:210px;border-color: #ADADAD;">
+<span class="pull-left" id="myAlgo">ASIC - Scrypt</span>
+<span class="fa fa-caret-down pull-right"></span>
+</button>
+<ul class="dropdown-menu" style="width:210px;margin-left:10px;" id="myDropdownList"></ul>
+</div>
+<div id="myDropdown" style="padding-top:8px;padding-bottom:8px;"></div>
+<div style="padding-top:20px;max-height:600px;width:160px;margin: 0 auto;">
+<style>
+	@media only screen and (min-width: 0px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584979446631-3_123456"] {
+			min-width: 0px;
+			min-height: 0px;
+		}
+	}
+	@media only screen and (min-width: 770px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584979446631-3_123456"] {
+			min-width: 160px;
+			min-height: 600px;
+		}
+	}
+</style><div id="bsa-zone_1584979446631-3_123456"></div> </div>
+<div id="sticky-anchor" style="padding-top:20px;"></div>
+</section>
+</aside>
+<header class="main-header" style="top: 0;width: 100%;max-height:50px;">
+<span class="logo hidden-xs" id="logo1" style="position:fixed;top:0px;height:50px;">
+<div class="box" style="border:0;margin:0;margin-bottom:10px;background-color:#367fa9">
+<a href="/" class="box-title" style="color:#FFFFFF;">
+<span class="logo-lg" style="position:relative;top:3px;left:-5px;"><p class="imagelogo" style="padding-left:52px"><span style="position:relative;top:-3px">Mining<b>Pool</b>Stats</span></p></span>
+</a>
+</div>
+</span>
+<nav class="navbar navbar-static-top" role="navigation" style="background-color:transparent;">
+<table style="margin:0px;padding:0px;width:100%;overflow:hidden;">
+<tr valign="top">
+<td align="center" id="header1" style="width:100%;">
+<div class="headerbox" style="background-color:#2aa7e0;">
+<table border="0" cellspacing="0" class="headerbanner" style="top: 0;max-width:100%;padding:0px;margin:0px;text-align:center;white-space:nowrap;"><tr><td></td><td style="text-align:center;">
+<style>
+	@media only screen and (min-width: 0px) and (min-height: 0px) {
+		div[id^="bsa-zone_1595519780433-2_123456"] {
+			min-width: 320px;
+			min-height: 50px;
+		}
+	}
+	@media only screen and (min-width: 640px) and (min-height: 0px) {
+		div[id^="bsa-zone_1595519780433-2_123456"] {
+			min-width: 728px;
+			min-height: 90px;
+		}
+	}
+</style><div id="bsa-zone_1595519780433-2_123456"></div> </td><td></td></tr></table>
+</div>
+</td>
+</tr>
+</table>
+<div class="visible-xs" style></div>
+
+<a href="javascript:void(0);" class="sidebar-toggle visible-xs" data-toggle="push-menu" role="button">
+<span class="sr-only">Toggle navigation</span>
+</a>
+<div class="visible-xs" style="font-size:24px;line-height:50px;font-weight:400;color:#f9f9f9;background-color:#367fa9;top:20px">
+<a href="/" class="box-title" style="color:#FFFFFF;">
+<span class="logo-lg" style="position:relative;top:4px;left:30px;"><p class="imagelogo" style="padding-left:50px;height:50px;"><span style="position:relative;top:-3px">Mining<b>Pool</b>Stats</span></p></span>
+</a>
+</div>
+</nav>
+</header>
+<div class="content-wrapper">
+<section class="content container-fluid" style="margin:0px;padding:0px;">
+
+
+<div class="show600" style="height:80px;"></div>
+<script data-cfasync="false"> initCoins('');</script>
+<table class="content-table" border="0" cellspacing="0" cellpadding="0" style="width:100%;min-height:1600px;table-layout: fixed;">
+<tr valign="top">
+<td class="hidden-xs" style="width:10px;"></td>
+<td style="overflow: hidden;">
+<div id="mainpage" style="display:none;">
+<div class="box">
+<div class="table-responsive" style="padding-left:5px;padding-right:5px;">
+<table id="pools" class="table table-condensed table-hover">
+<thead>
+<tr>
+<th class="visible-sm visible-md visible-lg" style="width:1px;"></th>
+<th style="white-space:nowrap;width:200px;min-width:150px;">
+<div class="box-header" style="position: relative;left: -16px;top:-5px;padding:0;vertical-align:text-top;margin-right:-20px;"><span class="hidden-sm hidden-md hidden-lg">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+<img id="logo_page" src alt="Litecoin" width="32" height="32">&nbsp;
+<h1 class="box-title" style="position: relative;left: 2px;top:12px;">Litecoin (LTC)
+<small id="newcoin" class="label" style="display:none;position:relative;font-size:50%;background-color:yellow;left:-1px;top:6px;padding:1;vertical-align:text-top;margin-right:-40px;"><a style href="newcoins" onclick="if (!window.__cfRLUnblockHandlers) return false; event.stopPropagation();" data-cf-modified-08d9d459fbf225292988a77b->NEW</a></small>
+<BR>
+<small>
+Scrypt </small>
+</h1></div>
+</th>
+<th class="headerth show1100" style="width:200px;text-align: center;height:45px;"><div style="position:relative;top:-10px;margin-left:10px;margin-right:-10px;min-width:160px;"><a href="https://trustpool.cc" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; return aClick('ad-click','trustpool.cc','https://trustpool.cc');" data-cf-modified-08d9d459fbf225292988a77b-><img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/trustpool_v5.webp" style="height:30px;width:160px" alt="trustpool.cc" /></a></div> </th>
+<th class="headerth show900" style="width:60px;vertical-align:text-top;text-align: right;padding-right:22px;">Pool<BR>Fee</th>
+<th class="headerth show1900" style="width:30px;vertical-align:text-top;text-align: center;padding-right:22px;margin-left:-20px;overflow:visible;">
+Daily PPS<BR>
+<div class="tooltip1">
+<span style="font-size:90%;" id="pssunit"></span>
+<span class="badge alert-info" style="margin-left:0px;margin-right:-20px;padding: 1px 5px;margin-top:-2px;"><i class="icon fa fa-info" style="font-size:80%;"></i></span>
+<span class="tooltiptext1" style="padding:3;left:-10px;top:20px;font-weight:500;font-size:70%;">PPS values are reported by pools.<br>Actual earnings may be different !</span>
+</div>
+</th>
+<th class="headerth show1750" style="width:30px;vertical-align:text-top;text-align: center;">Min<BR>Pay</th>
+<th class="headerth show1700" style="width:30px;vertical-align:text-top;text-align: center;">Miners<BR><div id="poolsminers"></div></th>
+<th class="headerth" style="width:70px;vertical-align:text-top;text-align: center;margin-right:-20px;margin-left:-20px;padding:0px;">
+<span class="show1600">7 Day History<BR><div style="text-align: center;margin-right:-7px;"><span class="sparkline_total"></span></div></span>
+<span class="hide1600">Network<BR><div id="nethash2"></div></span>
+</th>
+<th class="headerth" style="width:60px;vertical-align:text-top;text-align: left;">Hashrate<BR><div id="poolshash" style="margin-right:-15px;"></div></th>
+<th class="headerth show1600" style="width:130px;vertical-align:text-top;">Network Hashrate<BR>
+<div style="position: relative;left: 0px;top:-2px;padding:0;vertical-align:text-top;margin-right:-20px;display:block;max-height:5px;" id="nethash"></div>
+<span style="position: relative;left: 0px;top:7px;padding:0;vertical-align:text-top;margin-right:-20px;display:block;max-height:5px;" id="unknownhash"></span>
+</th>
+<th class="headerth show850" style="position: relative;width:55px;left: 2px;top:0px;padding:0;vertical-align:text-top;margin-right:-15px;">Blocks
+<span style="left: 0px;top:0px;padding:0;vertical-align:text-top;margin-right:-20px;display:block;max-height:5px;font-weight:600;font-size:70%;" id="lastblocks">in last 100</span>
+<span style="position: relative;left: 0px;top:10px;padding:0;vertical-align:text-top;margin-right:-20px;display:block;max-height:5px;font-weight:600;font-size:80%;" id="unknownblocks"></span>
+</th>
+<th class="headerth show1500" style="position: relative;width:50px;left: 2px;top:0px;padding:0;vertical-align:text-top;margin-right:-15px;padding-left:5px;">Block<BR>Height</th>
+<th class="headerth show600" style="position: relative;width:50px;left: 2px;top:0px;padding:0;vertical-align:text-top;margin-right:-15px;padding-left:5px;">Last<BR>Found</th>
+</tr>
+</thead>
+</table>
+<table class="table table-condensed" style="padding:0px;margin:0px;display: none;" id="mainpage_submit">
+<tr>
+<td style="width:50px">Missing pool ?</td>
+<td>
+<form id="contact-form" role="form">
+<div class="col-md-4"><input id="form_pool" type="text" name="pool" class="form-control" placeholder="Please enter pool URL" required="required" data-error="Pool is required."><div class="help-block with-errors"></div></div>
+<div class=" col-md-4"><input id="form_api" type="text" name="api" class="form-control" placeholder="Message or Api URL (optional)"><div class="help-block with-errors"></div></div>
+<div class="col-md-4"><input type="hidden" id="lista" name="lista" value="litecoin"><input type="submit" id="sendpool" class="btn btn-success btn-send" value="Submit Pool"></div>
+</form>
+</td>
+</tr>
+</table>
+<div id="messages"></div>
+<small class="pull-right" id="timp"></small>
+<small class="pull-right">Updated every 3 minutes.&nbsp;</small>
+</div>
+</div>
+</div>
+<div id="mainpage2" style="display:none;"><table border="0" cellspacing="0" style="width: 100%;height:110px;text-align:center;white-space:nowrap;"><tr><td></td>
+<td style="width: 728px;text-align:center;padding-top:10px;padding-bottom:0px;">
+<style>
+	@media only screen and (min-width: 0px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584979126718-9_123456"] {
+			min-width: 320px;
+			min-height: 50px;
+		}
+	}
+	@media only screen and (min-width: 640px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584979126718-9_123456"] {
+			min-width: 728px;
+			min-height: 90px;
+		}
+	}
+</style><div id="bsa-zone_1584979126718-9_123456"></div></td><td></td></tr></table>
+
+<div id="blockdistribution" style="padding-bottom:10px;padding-top:15px;">
+<div class="nav-tabs-custom" style="padding-bottom:0px;margin-bottom:15px;">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab_1" data-toggle="tab">Blocks Distribution</a></li>
+<li><a href="#tab_2" data-toggle="tab">Difficulty vs Price</a></li>
+<li><a href="#tab_3" data-toggle="tab">Hashrate History</a></li>
+<li id="tab_earnings"><a href="#tab_4" data-toggle="tab">Earnings <span style="font-size:90%;" id="earnings_unit"></span></a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="tab_1">
+<div id="chartdiv"></div>
+<div id="distribution_error"></div>
+</div>
+<div class="tab-pane" id="tab_2">
+<div id="graph"></div>
+</div>
+<div class="tab-pane" id="tab_3">
+<div id="hashrate_selectordiv" style="padding-bottom:15px;margin-right:45px;"></div>
+<div id="hashrate_graph"><div class="overlay" style="padding-top:225px;text-align: center;font-size:180%;"><i class="fa fa-refresh fa-spin"></i></div></div>
+</div>
+<div class="tab-pane" id="tab_4">
+<div id="reward_selectordiv" style="padding-bottom:15px;margin-right:45px;"></div>
+<div id="reward_graph"><div class="overlay" style="padding-top:225px;text-align: center;font-size:180%;"><i class="fa fa-refresh fa-spin"></i></div></div>
+</div>
+</div>
+</div>
+<table class="show1300" border="0" cellspacing="0" style="width: 100%;height:90px;text-align:center;"><tr><td></td><td style="width:728px;text-align:center;"><style>
+	@media only screen and (min-width: 0px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584979315759-7_123456"] {
+			min-width: 320px;
+			min-height: 50px;
+		}
+	}
+	@media only screen and (min-width: 640px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584979315759-7_123456"] {
+			min-width: 728px;
+			min-height: 90px;
+		}
+	}
+</style><div id="bsa-zone_1584979315759-7_123456"></div></td><td></td></tr></table><table class="hide1300" border="0" cellspacing="0" style="width: 100%;height:100px;text-align:center;"><tr><td></td><td style="width:320px;text-align:center;"><div id="bsa-zone_1584979315759-7_123456"></div></td><td></td></tr></table>
+</div>
+<table border="0" cellspacing="0" style="width:100%;padding-top:10px;min-height:1340px;" id="zona_market">
+<tr valign="top"><td>
+<div class="column_right" style="padding-left:0px;padding-right:0px;" id="links_panel">
+<div class="box box-comment" id="div_minerstat" style="padding-left:0px;padding-right:0px;">
+<div class="box-header with-border" style="padding-bottom:5px;"><h3 class="box-title" style="padding-left:22%;">LTC Mining Calculator</h3></div>
+<a class="minerstat-widget" title="ZIL mining calculator" data-hashrate="1" data-unit="T" rel="nofollow" href="https://minerstat.com/coin/ZIL"></a>
+
+</div>
+<div class="box box-comment" style="padding-left:0px;padding-right:0px;max-width:100%;">
+<div class="box-header with-border" style="margin-left:30%;padding-bottom:5px;"><h3 class="box-title">LTC Source</h3></div>
+<table class="table table-condensed" style="margin:0px;table-layout:fixed;">
+<tr><td style="width:120px;min-width:120px;text-align:right;">Latest release <i class="fa fa-github"></i><br><small style="position:relative;top:0px;right:15px;" id="source_tag"></small></td><td><a href="https://github.com/litecoin-project/litecoin" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','github');" data-cf-modified-08d9d459fbf225292988a77b-><div id="source_name" style="max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;">github.com<span id="source_error" class="label label-danger" style="display:none;margin-left:5px;">!</span></div></a><br><small style="position:relative;top:-5px;" id="source_time"></small></td></tr> </table>
+</div>
+<div class="box box-comment" style="padding-left:0px;padding-right:0px;">
+<div class="box-header with-border" style="margin-left:30%;padding-bottom:5px;"><h3 class="box-title">LTC Links</h3></div>
+<table class="table table-condensed" style="margin:0px;">
+<tr><td style="width:120px;text-align:right;">Website <i class="fa fa-home"></i></td><td><a href="https://litecoin.org" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('website-click','litecoin.org');" data-cf-modified-08d9d459fbf225292988a77b->litecoin.org</a></td></tr><tr><td style="text-align:right;">Explorer <i class="fa fa-cog"></i></td><td><a href="https://chainz.cryptoid.info/ltc" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('website-click','chainz.cryptoid.info');" data-cf-modified-08d9d459fbf225292988a77b->chainz.cryptoid.info</a><br><a href="https://ltc.ihashrate.com" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('website-click','ltc.ihashrate.com');" data-cf-modified-08d9d459fbf225292988a77b->ltc.ihashrate.com</a><br><a href="https://explorer.viabtc.com/ltc" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('website-click','explorer.viabtc.com');" data-cf-modified-08d9d459fbf225292988a77b->explorer.viabtc.com</a><br><a href="https://ltc.tokenview.io" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('website-click','ltc.tokenview.io');" data-cf-modified-08d9d459fbf225292988a77b->ltc.tokenview.io</a></td></tr><tr><td style="text-align:right;">Forum <i class="fa fa-bookmark"></i></td><td><a href="https://bitcointalk.org/index.php?topic=47417" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','bitcointalk');" data-cf-modified-08d9d459fbf225292988a77b->bitcointalk.org</a></td></tr><tr><td style="text-align:right;">Reddit <i class="fa fa-reddit"></i></td><td><a href="https://reddit.com/r/litecoin" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','reddit');" data-cf-modified-08d9d459fbf225292988a77b->/r/litecoin</a></td></tr><tr><td style="text-align:right;">Twitter <i class="fa fa-twitter"></i></td><td><a href="https://twitter.com/litecoin" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','twitter');" data-cf-modified-08d9d459fbf225292988a77b->@litecoin</a></td></tr><tr id="link_whattomine" style="display:none;"><td style="text-align:right;">Calculator <i class="fa fa-calculator"></i></td><td><a id="a_whattomine" href target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','whattomine');" data-cf-modified-08d9d459fbf225292988a77b->whattomine.com</a></td></tr><tr id="link_cryptunit" style="display:none;"><td style="text-align:right;">Calculator <i class="fa fa-calculator"></i></td><td><a id="a_cryptunit" href target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','cryptunit');" data-cf-modified-08d9d459fbf225292988a77b->cryptunit.com</a></td></tr><tr id="link_coinmarketcap" style="display:none;"><td style="text-align:right;">Info <img style="width:16px;height:16px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQklEQVQ4jZXTOy9EYRAG4IdshLg0OqFXEYlCXH6AxA+QKBVEIjq9W1CJHyCCLW1NJwoaoqK3KhphOwm7ijOH41jEJJOTeb/3nW9mzjd8txHsoYy38HJgw3X4H9aKIqqooISl8FJgVRwE95v4Aq9YR0edCzqwEZyLfJJiHEz+VmLYZHD3U2AkSlvPEecwk8Ma4rsZmiGS4VRyZU8E4SUj3MEjRoNbwS7JhEsZcRtuUZP8gYaopha+FbwSyo3oxnUmwQp6cBxxF9Zwiie0BH6D7sZcj4OYj7ZOAtsO0WxUkGoKEX+0UMAV7tGJxZhDFcshOov2pvGAcz6HuBzkqSCPR3yJ5sCGJYOs4Q79KZjedJRrqTfTc2rt6ENTFixG1gV/2xgG8mD2KW/4+ynv1MucXaZnHEoWadXXZSpK3sqP9q91fgezjV9LF79kFQAAAABJRU5ErkJggg==" alt="coinmarketcap"></td><td><a id="a_coinmarketcap" href target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','coinmarketcap');" data-cf-modified-08d9d459fbf225292988a77b->coinmarketcap.com</a></td></tr><tr id="link_coingecko" style="display:none;"><td style="text-align:right;">Info <img style="width:16px;height:16px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAA+gAAAPoAbV7UmsAAAA/UExURWdnZ2RkZGhoaMHBwWdnZ2pqamlpaWtra319fWJiYsfHx2NjY21tbbi4uIqKipWVlaurq6Ojo/X19X9/f9jY2AUYt3sAAAAKdFJOUwIf///GNNme3TSassbCAAAAmklEQVQY0zWP2w7DMAhDI5yOlAC5/v+3jqXdkfJgYpCdUnBxcS98pxduHdhzdn50NkBEYBv5/IcOzASyw3MPwVjuVc0w+xUGaTRkO9U1MDkVgSp8dCWtPktasFpJQJWW6/TkGPSjBjpkxUp/dLwGlDjajkOrhjZOd9NnRVsEahGf49wZGOQJn8+AmqDnt9xxDDj/6178IX3rfwFECAd8PbtYIgAAAABJRU5ErkJggg==" alt="coingecko"></td><td><a id="a_coingecko" href target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','coingecko');" data-cf-modified-08d9d459fbf225292988a77b->coingecko.com</a></td></tr><tr id="link_coin360" style="display:none;"><td style="text-align:right;">Info <img style="width:16px;height:16px;" src id="img_coin360" alt="coin360"></td><td><a id="a_coin360" href target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','coin360');" data-cf-modified-08d9d459fbf225292988a77b->coin360.com</a></td></tr><tr id="link_coinpaprika" style="display:none;"><td style="text-align:right;">Info <img style="width:16px;height:16px;" src id="img_coinpaprika" alt="coinpaprika"></td><td><a id="a_coinpaprika" href target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('link-click','coinpaprika');" data-cf-modified-08d9d459fbf225292988a77b->coinpaprika.com</a></td></tr>
+<tr><td colspan="2" style="height:80px;padding:0;">
+<div style="height:80px;width:300px;padding-top:10px;margin: 0 auto;">
+
+<a href="https://coinex.com" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; return aClick('ad-click','coinex.com','https://www.coinex.com/register?refer_code=4un5t');" data-cf-modified-08d9d459fbf225292988a77b-><img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/coinex4.webp" style="width:300px" alt="coinex.com" /></a> </div>
+</td></tr>
+</table>
+</div>
+<div class="show1400" style="text-align:center;padding-top:10px;margin:0px;height:600px;margin: 0 auto;">
+<div style="height:600px;width:300px;margin: 0 auto;">
+<style>
+	@media only screen and (min-width: 0px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584980152138-8_123456"] {
+			min-width: 300px;
+			min-height: 250px;
+		}
+	}
+	@media only screen and (min-width: 640px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584980152138-8_123456"] {
+			min-width: 300px;
+			min-height: 250px;
+		}
+	}
+</style><div id="bsa-zone_1584980152138-8_123456"></div> </div>
+</div>
+</div>
+<div class="column_left" style="display:none;" id="zona_market_blocks">
+<div id="mainmarket" style="min-width:300px;padding-bottom:22px;">
+<div class="box box-comment">
+<div class="table-responsive" style="padding-left:10px;padding-right:10px;">
+<table id="Market" class="table table-condensed table-hover">
+<thead>
+<tr>
+<th class="visible-sm visible-lg" style="width:1px">#</th>
+<th><div class="box-header" style="padding-top:0px;padding-bottom:0px;"><h3 class="box-title">LTC Exchanges</h3></div></th>
+<th>Pair</th>
+<th style="width:75px">24h Volume</th>
+</tr>
+</thead>
+</table>
+</div>
+</div>
+</div>
+<div id="mainblocks" style="min-width:300px;display:none;padding-bottom:22px;">
+<div class="box box-comment">
+<div class="table-responsive" style="padding-left:10px;padding-right:10px;">
+<table id="Blocks" class="table table-condensed table-hover">
+<thead>
+<tr>
+<th style="width:55px"><div class="box-header" style="padding-top:0px;padding-bottom:0px;padding-left:0px;display:block;"><h3 class="box-title" style="font-weight:500;">Block</h3></div></th>
+<th><div class="box-header" style="padding-top:0px;padding-bottom:0px;padding-left:0px;display:block;"><h3 class="box-title" style="font-weight:500;">Mined by</h3></div></th>
+<th style="width:60px"><div class="box-header" style="padding-top:0px;padding-bottom:0px;padding-left:0px;display:block;"><h3 class="box-title" style="font-weight:500;">Age</h3></div></th>
+</tr>
+</thead>
+</table>
+</div>
+</div>
+</div>
+</div>
+</td></tr>
+</table>
+</div>
+</td>
+<td class="hidden-xs" style="width:10px;"></td>
+<td id="mainpage_right" class="show1350" style="width:305px;padding-right:5px;">
+<table style="width:300;padding-left:0px;padding-right:5px;">
+<tr><td><div style="padding-bottom:5px;height:65px;"><a href="https://mexc.com" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; return aClick('ad-click','mexc.com','https://mexc.com/register?inviteCode=mexc-1UYyV');" data-cf-modified-08d9d459fbf225292988a77b-><img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/mexc300.png" style="width:300px" alt="mexc.com" /></a></div><td></tr>
+<tr><td>
+<div class="box box-comment" style="padding-bottom:5px;height:210px;">
+<div class="box-header with-border" style="text-align:center;padding:3px;">
+<img class="pull-left lozad" style="position: relative;top:2px;left:5px;height:16px;" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="ico/litecoin.webp" alt="Litecoin">
+<span class="pull-left" style="position: relative;left:12px;">LTC/USD : <span id="stats_priceusd"></span></span>
+<small class="label pull-right bg-yellow" style="position: relative;top:2px;width:40px"><span>7 Day</span></small>
+</div>
+<table class="table table-condensed">
+<tr>
+<td style="width:300px;height:100px;border:0;margin:0;padding:0;" colspan="2"><span class="pricesparkline"></span></td>
+</tr>
+<tr>
+<td style="width:160px;text-align:left;padding-left:10px;"><div style="white-space:nowrap;">Market Cap : <span id="stats_marketcap"></span></div></td>
+<td style="width:140px;text-align:left;">24h Vol : <span id="stats_volume"></span></td>
+</tr>
+<tr>
+<td colspan="2">
+<div style="text-align: left;padding-left:6px;;padding-right:-6px;">Circulating Supply : <span id="stats_supply_circulating"></span></div>
+<div style="text-align: left;padding-left:6px;">Emission (24h) : <span id="stats_supply_emission"></span></div>
+</td>
+</tr>
+</table>
+</div>
+</td></tr>
+<tr id="ad_side_1"><td style="padding-bottom:7px;">
+<div style="height:250px;margin: 0 auto;">
+<style>
+	@media only screen and (min-width: 0px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584979952014-0_123456"] {
+			min-width: 0px;
+			min-height: 0px;
+		}
+	}
+	@media only screen and (min-width: 1200px) and (min-height: 0px) {
+		div[id^="bsa-zone_1584979952014-0_123456"] {
+			min-width: 300px;
+			min-height: 250px;
+		}
+	}
+</style><div id="bsa-zone_1584979952014-0_123456"></div> </div>
+</td></tr>
+<tr><td>
+<div class="box box-comment">
+<div class="box-header with-border" style="text-align:center;padding:3px;">
+<img class="pull-left lozad" style="position: relative;top:2px;left:5px;height:16px;" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="ico/litecoin.webp" alt="Litecoin">
+<span class="pull-left" style="position: relative;left:12px;">Difficulty : <span id="stats_difficulty"></span></span>
+<small class="label pull-right bg-yellow" style="position: relative;top:2px;width:52px"><span>6 Months</span></small>
+</div>
+<table>
+<tr>
+<td style="height:100px;" colspan="2">
+<div style="text-align: center;width:300px;height:100px"><span class="diffsparkline"></span></div>
+<div style="text-align: center;width:300px;height:30px;padding:1px;"><div id="block_sparkline" style="text-align:center;width:298px;height:30px;background-color:#efefef;display:none;"><span class="blocksparkline"></span></div></div>
+</td>
+</tr>
+<tr>
+<td style="width:150px;height:20px;text-align: center;font-size:95%"><div style="white-space:nowrap;">Block Height : <span id="stats_blockheight"></span></div></td>
+<td style="width:150px;text-align: center;font-size:95%"><div style="white-space:nowrap;">Avg. Block Time : <span id="stats_blocktime"></span></div></td>
+</tr>
+<tr id="stats_fork" style="display:none;">
+<td style="width:150px;height:20px;text-align: center;font-size:95%"><div style="white-space:nowrap;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hard Fork : <span id="stats_forkblock" style="color:red"></span></div></td>
+<td style="width:150px;text-align: center;font-size:95%"><div style="white-space:nowrap;"><span id="stats_forkblocktime"></span></div></td>
+</tr>
+</table>
+</div>
+</td></tr>
+<tr id="stats_halving" style="display:none;"><td>
+<div class="box box-danger">
+<table>
+<tr>
+<td style="width:150px;height:20px;text-align: right;font-size:95%"><div style="white-space:nowrap;">Reward Halving in :</div></td>
+<td style="text-align: left;font-size:95%;padding-left:10px;"><div style="white-space:nowrap;"><span id="stats_halvingtime"></span></div></td>
+</tr>
+</table>
+</div>
+</td></tr>
+<tr><td><div style="padding-bottom:7px;height:100px;"><a href="https://www.okx.com" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; return aClick('ad-click','www.okx.com','https://www.okx.com/join/MINER');" data-cf-modified-08d9d459fbf225292988a77b-><img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/okx100_1.webp" style="max-width:100%;" alt="okx.com" /></a></div><td></tr>
+<tr><td><div id="twitter" style="height:460px;width:300px;padding-bottom:10px;"><a class="twitter-timeline" id="twitter_a" data-width="300" style="color:#efefef;" data-height="450" href="https://twitter.com/litecoin?ref_src=twsrc%5Etfw" data-chrome="noscrollbar">Tweets by litecoin</a></div></td></tr>
+</table>
+</td>
+</tr>
+</table>
+<BR>
+</section></div>
+<div class="modal fade" id="modal-default">
+<div class="modal-dialog" style="width:900px;">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Small donations to keep website running are greatly appreciated !</h4>
+</div>
+<div class="modal-body" style="margin-right:0px;" id="donate_content"></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="modal-email">
+<div class="modal-dialog" style="width:900px;">
+<div class="modal-content">
+<form id="email-form" role="form">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span></button>
+<h3 class="box-title">Quick Message to MiningPoolStats</h3>
+</div>
+<div class="modal-body" style="margin-right:0px;">
+<div class="form-group">
+<input id="email_sender" type="text" name="email_sender" class="form-control" placeholder="Sender ( required if you need a reply !)"><div class="help-block with-errors"></div>
+<input id="email_subject" type="text" name="email_subject" class="form-control" placeholder="Subject">
+<textarea id="email_mesaj" name="email_mesaj" class="textarea" placeholder="Message" required="required" data-error="Message is required." style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;resize: none;"></textarea>
+</div>
+</div>
+<div class="modal-footer">
+<div id="email_result" class="pull-left"></div>
+<input type="hidden" id="email_lista" name="email_lista" value="litecoin">
+<input type="submit" id="email_sendmail" class="btn btn-success btn-send" value="Send Email">
+</div>
+</form>
+</div>
+</div>
+</div>
+<footer class="main-footer" style="display:none;">
+<table border="0" Width="100%">
+<tr>
+<td style="border-top:1px solid #d2d6de;border-right:1px solid #d2d6de;padding:15px;">
+<div style="float:right;">
+<img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/miningpoolstats_v4.webp" style="height:40px;" alt="MiningPoolStats">
+<i class="show1000" style="position:relative;left:5px;">
+<br>Powerd by : <a href="https://adminlte.io" target="_blank"><span class="logo-lg"><b>Admin</b>LTE</span></a>
+<br>Market data by : <a href="https://www.coingecko.com" target="_blank">Coingecko.com</a>
+</i>
+</div>
+<button type="button" class="btn btn-default" style="padding:2px;width:80px;height:38px;font-size:140%;background-color:#00a65a;color:white" data-toggle="modal" data-target="#modal-default" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#donate_content').load('page_donate.php?t='+last_time);gaSendEvent('footer-click','donate');" data-cf-modified-08d9d459fbf225292988a77b-><b>Donate</b></button>
+<button type="button" class="btn btn-default" style="padding:2px;width:120px;height:38px;font-size:140%;background-color:#3c8dbc;color:white" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('footer-click','orders');window.open('https://orders.miningpoolstats.stream');event.preventDefault();return false;" data-cf-modified-08d9d459fbf225292988a77b-><b>Advertising</b></button>
+<button type="button" class="btn btn-default" style="padding:2px;width:60px;" data-toggle="modal" data-target="#modal-email" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('footer-click','email');CleanMessage();" data-cf-modified-08d9d459fbf225292988a77b-><img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/email_button.webp" alt="Email"></button>
+<button type="button" class="btn btn-default" style="padding:2px;width:110px;" onclick="if (!window.__cfRLUnblockHandlers) return false; gaSendEvent('footer-click','twitter');window.open('https://twitter.com/miningpoolstats');event.preventDefault();return false;" data-cf-modified-08d9d459fbf225292988a77b-><img class="lozad" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/follow_tweeter.webp" alt="Twitter"></button>
+
+<BR><strong>Copyright &copy; 2024 <a href="javascript:void(0);">MiningPoolsStats</a>.</strong> All rights reserved.
+<BR>Disclaimer: We are not responsable for any pool or exchange listed here.
+
+<br><br><br> <td>
+</table>
+</footer>
+</div>
+<script data-cfasync="false">initTable();updateDiff();</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;3eb654faa1024e918e508acf328a6f4e&quot;}" type="08d9d459fbf225292988a77b-text/javascript"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="08d9d459fbf225292988a77b-|49" defer></script></body>
+</html>
